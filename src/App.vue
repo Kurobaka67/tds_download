@@ -4,7 +4,6 @@
 
 <template>
   <main>
-    <p>Hey</p>
     <button @click="">Clique pour télécharger</button>
   </main>
 </template>
