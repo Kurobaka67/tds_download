@@ -4,7 +4,7 @@ export default {
     downloadAPK() {
       // create element <a> for download PDF
       const link = document.createElement('a');
-      link.href = 'assets/app-release.apk';
+      link.href = 'app-release.apk';
       link.target = '_blank';
       link.download = 'app-release.apk';
 
