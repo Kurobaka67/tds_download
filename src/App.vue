@@ -1,10 +1,25 @@
-<script setup>
+<script>
+export default {
+  methods: {
+    downloadAPK() {
+      // create element <a> for download PDF
+      const link = document.createElement('a');
+      link.href = 'assets/app-release.apk';
+      link.target = '_blank';
+      link.download = 'app-release.apk';
 
+      // Simulate a click on the element <a>
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  }
+}
 </script>
 
 <template>
   <main>
-    <button @click="">Clique pour télécharger</button>
+    <button @click="downloadAPK">Clique pour télécharger</button>
   </main>
 </template>
 
